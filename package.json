@@ -1,0 +1,22 @@
+{
+  "name": "iframe-app-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --mode=development && node index",
+    "build": "webpack --mode=production && node index",
+    "webpack": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octadesk/iframe": "^0.0.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
