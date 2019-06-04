@@ -1,4 +1,5 @@
 const express = require('express');
+const Spinner = require('cli-spinner').Spinner;
 const app = express();
 
 const port = process.env.PORT || 3000;
@@ -10,7 +11,8 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-	console.info('##################################');
-	console.info('App listening on port ' + port);
-	console.info('##################################');
+	
+	spinner = new Spinner(`app listening on port ${port} %s `);
+	spinner.setSpinnerString(21);
+	spinner.start();
 });

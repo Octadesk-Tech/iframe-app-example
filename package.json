@@ -12,8 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@octadesk/iframe": "^0.0.1",
-    "express": "^4.17.1"
+    "@octadesk/iframe": "^0.0.2",
+    "cli-spinner": "^0.2.10",
+    "express": "^4.17.1",
+    "log-symbols": "^3.0.0"
   },
   "devDependencies": {
     "webpack": "^4.32.2",
