@@ -1,5 +1,4 @@
 const express = require('express');
-const Spinner = require('cli-spinner').Spinner;
 const cors = require('cors');
 const app = express();
 
@@ -16,7 +15,5 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
 	
-	spinner = new Spinner(`app listening on port ${port} %s `);
-	spinner.setSpinnerString(21);
-	spinner.start();
+	console.log('app listening on port: ', port);
 });

@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --mode=development && node index",
     "build": "webpack --mode=production && node index",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "firebase": "firebase"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "log-symbols": "^3.0.0"
   },
   "devDependencies": {
+    "firebase-tools": "^6.11.0",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
   }

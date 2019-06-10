@@ -51,6 +51,5 @@ window.addEventListener('load', function() {
 
   // tell octadesk to connect
   octadeskIframe.connect();
-  octadeskIframe.openTicket(2054);
   console.log('App connected');
 });
