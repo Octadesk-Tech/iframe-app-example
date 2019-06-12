@@ -1,6 +1,6 @@
 const OctadeskIframe = require('@octadesk/iframe');
 
-const APP_ID = 'c454fade-8245-11e9-bc42-526af7764f64';
+const APP_ID = 'your-app-id';
 
 // create a instance of service with your app id
 window.addEventListener('load', function() {
@@ -25,22 +25,10 @@ window.addEventListener('load', function() {
     renderEvent(`ticket aberto: ${ticket.number}`);
   });
 
-  window.addEventListener('octadesk_onOpenPerson', function(e) {
-    const person = e.detail;
-    console.log('octadesk_onOpenPerson: ', person);
-    renderEvent(`pessoa aberta: ${person.name}`);
-  });
-
   window.addEventListener('octadesk_onAfterSaveTicket', function(e) {
     const ticket = e.detail;
     console.log('octadesk_onAfterSaveTicket: ', ticket);
     renderEvent(`ticket salvo: ${ticket.number}`);
-  });
-
-  window.addEventListener('octadesk_onAfterSavePerson', function(e) {
-    const person = e.detail;
-    console.log('octadesk_onAfterSavePerson: ', person);
-    renderEvent(`pessoa salva: ${person.name}`);
   });
 
   const renderEvent = renderText => {
